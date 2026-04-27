@@ -114,6 +114,12 @@ a {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--mint);
+  animation: floatBanana 4s ease-in-out infinite;
+}
+
+@keyframes floatBanana {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .hero-title {
@@ -331,6 +337,57 @@ a {
   flex-shrink: 0;
 }
 
+
+/* ===== HOW TO BUY ===== */
+
+.howto-section {
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.howto-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.howto-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-text {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  white-space: nowrap;
+}
+
+.step-arrow {
+  font-size: 1.25rem;
+  color: var(--gray-300);
+  margin-bottom: 24px;
+}
 
 /* ===== MEME GALLERY ===== */
 
@@ -649,7 +706,15 @@ a {
   font-size: 0.8125rem;
   color: var(--gray-500);
   letter-spacing: 0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-meme {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  color: var(--mint-dark);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .footer-easter {
@@ -697,6 +762,16 @@ a {
 
   .section {
     padding: 56px 0;
+  }
+
+  .howto-steps {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+    margin-bottom: 0;
   }
 
   .meme-grid {
