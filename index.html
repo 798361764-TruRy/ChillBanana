@@ -11,13 +11,13 @@
     <meta property="og:description" content="The emotionally stable banana of Solana. A meme for everyone tired of FOMO, panic, and overthinking." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chillbanana.fun" />
-    <meta property="og:image" content="images/hero-meditation.jpeg" />
+    <meta property="og:image" content="hero-meditation.jpeg" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Chill Banana | Don't Panic. Stay Banana." />
     <meta name="twitter:description" content="The emotionally stable banana of Solana." />
-    <meta name="twitter:image" content="images/hero-meditation.jpeg" />
+    <meta name="twitter:image" content="hero-meditation.jpeg" />
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍌</text></svg>" />
@@ -30,14 +30,14 @@
     <!-- Supabase -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- ========== HERO ========== -->
     <section class="hero">
       <div class="hero-inner">
         <img
-          src="images/hero-meditation.jpeg"
+          src="hero-meditation.jpeg"
           alt="Chill Banana Meditating"
           class="hero-img"
           width="240"
@@ -120,7 +120,7 @@
         <h2 class="section-title">Meme Gallery</h2>
         <div class="meme-grid">
           <div class="meme-card" data-meme="meme_1">
-            <img src="images/hero-meditation.jpeg" alt="Banana Meditating" width="512" height="512" loading="lazy" />
+            <img src="hero-meditation.jpeg" alt="Banana Meditating" width="512" height="512" loading="lazy" />
             <div class="meme-caption">The chart is loud. The banana is chill.</div>
             <button class="like-btn" onclick="likeMeme('meme_1', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -128,7 +128,7 @@
             </button>
           </div>
           <div class="meme-card" data-meme="meme_2">
-            <img src="images/meme-chaos.jpeg" alt="Banana vs Chaos" width="512" height="512" loading="lazy" />
+            <img src="meme-chaos.jpeg" alt="Banana vs Chaos" width="512" height="512" loading="lazy" />
             <div class="meme-caption">Do not panic buy. Do not panic sell. Just peel.</div>
             <button class="like-btn" onclick="likeMeme('meme_2', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -136,7 +136,7 @@
             </button>
           </div>
           <div class="meme-card" data-meme="meme_3">
-            <img src="images/meme-hammock.jpeg" alt="Banana Chilling" width="512" height="512" loading="lazy" />
+            <img src="meme-hammock.jpeg" alt="Banana Chilling" width="512" height="512" loading="lazy" />
             <div class="meme-caption">Chart red. Banana green.</div>
             <button class="like-btn" onclick="likeMeme('meme_3', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -144,7 +144,7 @@
             </button>
           </div>
           <div class="meme-card" data-meme="meme_4">
-            <img src="images/meme-beach.jpeg" alt="Banana on Beach" width="512" height="512" loading="lazy" />
+            <img src="meme-beach.jpeg" alt="Banana on Beach" width="512" height="512" loading="lazy" />
             <div class="meme-caption">Not therapy. Just banana.</div>
             <button class="like-btn" onclick="likeMeme('meme_4', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -152,7 +152,7 @@
             </button>
           </div>
           <div class="meme-card" data-meme="meme_5">
-            <img src="images/meme-yoga.jpeg" alt="Banana Yoga" width="512" height="512" loading="lazy" />
+            <img src="meme-yoga.jpeg" alt="Banana Yoga" width="512" height="512" loading="lazy" />
             <div class="meme-caption">FOMO is unripe banana behavior.</div>
             <button class="like-btn" onclick="likeMeme('meme_5', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -160,7 +160,7 @@
             </button>
           </div>
           <div class="meme-card" data-meme="meme_6">
-            <img src="images/meme-clouds.jpeg" alt="Banana Dreaming" width="512" height="512" loading="lazy" />
+            <img src="meme-clouds.jpeg" alt="Banana Dreaming" width="512" height="512" loading="lazy" />
             <div class="meme-caption">Peel slowly. Breathe deeply.</div>
             <button class="like-btn" onclick="likeMeme('meme_6', this)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
@@ -207,7 +207,7 @@
     <!-- ========== ABOUT + SAFETY + CHILL BUTTON ========== -->
     <section class="section about-section">
       <div class="container about-container">
-        <img src="images/about-green-banana.jpeg" alt="Green Banana" class="about-img" width="120" height="120" />
+        <img src="about-green-banana.jpeg" alt="Green Banana" class="about-img" width="120" height="120" />
         <p class="about-text">
           Everyone is panicking. The banana is meditating.<br/><br/>
           $CHILL is a Solana meme. Not therapy. Not financial advice. Not medical advice. Just banana.<br/><br/>
@@ -260,6 +260,6 @@
     </footer>
 
     <!-- ========== SCRIPTS ========== -->
-    <script src="scripts/main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
